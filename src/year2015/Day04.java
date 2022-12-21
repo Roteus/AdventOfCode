@@ -18,7 +18,7 @@ public class Day04 {
             try {
                 md5 = MessageDigest.getInstance("MD5");
             } catch (NoSuchAlgorithmException e) {
-                throw new NoSuchAlgorithmException(e);
+                throw new RuntimeException(e);
             }
             md5.update(StandardCharsets.UTF_8.encode(password));
             if(String.format("%032x", new BigInteger(1, md5.digest())).startsWith("000000")){
