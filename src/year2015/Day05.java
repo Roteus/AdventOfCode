@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Day05 {
 
-    private static final String ENTRADA[] = {
+    private static final String[] ENTRADA = {
             "rthkunfaakmwmush",
             "qxlnvjguikqcyfzt",
             "sleaoasjspnjctqt",
@@ -1036,10 +1036,7 @@ public class Day05 {
                 }
             }
         }
-        if(contador >= 3){
-            return true;
-        }
-        return false;
+        return contador >= 3;
     }
 
     private static boolean tem2LetrasRepetidasSeguidas(String entrada){
